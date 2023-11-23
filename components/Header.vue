@@ -8,10 +8,10 @@
       <img src="/Logo/Logo.png" alt="Game Planer" />
       <ul class="flex flex-col lg:flex-row lg:space-x-8 text-white">
         <li>
-          <NuxtLink to="/">Home</NuxtLink>
+          <ULink to="/">Home</ULink>
         </li>
         <li>
-          <NuxtLink to="/profile">Profile</NuxtLink>
+          <ULink to="/profile">Profile</ULink>
         </li>
       </ul>
       <ColorMode class="flex !justify-end" />
