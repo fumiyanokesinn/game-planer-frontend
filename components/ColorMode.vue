@@ -1,19 +1,29 @@
+<script setup>
+  const modes = [
+    {
+      name: 'Light',
+      value: 'light'
+    },
+    {
+      name: 'Dark',
+      value: 'dark'
+    },
+    {
+      name: 'Sepia',
+      value: 'sepia'
+    }
+  ];
+</script>
+
 <template>
   <div>
-    <h1>Color mode: {{ $colorMode.value }}</h1>
-    <select v-model="$colorMode.preference">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-      <option value="sepia">Sepia</option>
-    </select>
+    <USelect
+      v-model="$colorMode.preference"
+      :options="modes"
+      option-attribute="name"
+    />
   </div>
 </template>
-
-<script setup>
-  const colorMode = useColorMode();
-
-  console.log(colorMode.preference);
-</script>
 
 <style>
   body {

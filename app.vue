@@ -1,6 +1,7 @@
 <template>
-  <NuxtLayout>
-    <div class="p-8">Hello World</div>
-    <ColorMode />
-  </NuxtLayout>
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
