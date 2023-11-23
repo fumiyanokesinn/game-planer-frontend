@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       title: 'Game Planer'
     }
   },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@nuxtjs/color-mode'],
   typescript: {
     typeCheck: true,
     strict: true
@@ -18,5 +18,8 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {}
     }
+  },
+  colorMode: {
+    classSuffix: ''
   }
 });

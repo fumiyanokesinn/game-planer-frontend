@@ -1,3 +1,4 @@
 <template>
-  <div></div>
+  <Header />
+  <slot />
 </template>
