@@ -6,6 +6,7 @@ export default defineNuxtConfig({
       title: 'Game Planer'
     }
   },
+  modules: ['@nuxt/ui'],
   typescript: {
     typeCheck: true,
     strict: true

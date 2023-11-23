@@ -1,3 +1,3 @@
 <template>
-  <div class="p-4">Hello</div>
+  <div class="p-8">Hello World</div>
 </template>
