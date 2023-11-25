@@ -1,6 +1,6 @@
 <template>
   <div class="items-center">
-    <div class="text-white">ColorMode：</div>
+    <div class="text-white"><p>ColorMode：</p></div>
     <USelect
       v-model="$colorMode.preference"
       :options="modes"
