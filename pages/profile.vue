@@ -64,26 +64,51 @@
         <p class="text-4xl text-center mb-4">My Skill</p>
         <UCard class="h-full">
           <p class="mb-4">
-            <NuxtLink to="https://skillicons.dev" target="_blank">
+            <ULink to="https://skillicons.dev" target="_blank">
               <img
                 src="https://skillicons.dev/icons?i=git,docker,java,php,laravel,js,react,redux,vue,nuxtjs"
               />
-            </NuxtLink>
+            </ULink>
           </p>
           <p class="text-center text-2xl">My Favorite Skill</p>
-          <NuxtLink to="https://godotengine.org/" target="_blank">
+          <ULink to="https://godotengine.org/" target="_blank">
             <img
               src="https://storage.googleapis.com/zenn-user-upload/wcau04bhl793ufoq5woj0978lrw6"
             />
-          </NuxtLink>
+          </ULink>
         </UCard>
       </div>
     </div>
     <div class="flex justify-center mb-8">
-      <p class="text-7xl">OutPut</p>
+      <p class="text-7xl">OutPut Game</p>
     </div>
     <div class="flex justify-center">
-      <UCard class="w-2/3"></UCard>
+      <UCard class="w-2/3">
+        <div class="grid grid-flow-row grid-cols-3 place-items-center">
+          <ULink
+            to="https://fumiyanokesinn.itch.io/flappy-godot"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg"
+              src="https://img.itch.zone/aW1nLzEyOTIyMTYyLnBuZw==/315x250%23c/pdQmQq.png"
+            />
+          </ULink>
+          <ULink
+            to="https://fumiyanokesinn.itch.io/block-breaker-demo"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg"
+              src="https://img.itch.zone/aW1nLzEyMjA3NjYyLmpwZw==/315x250%23c/egb13T.jpg"
+            />
+          </ULink>
+          <img src="/Logo/question.png" />
+          <p>Flappy Bird</p>
+          <p>Block Breaker Demo</p>
+          <p>Coming Soon(in two years)</p>
+        </div>
+      </UCard>
     </div>
   </div>
 </template>
