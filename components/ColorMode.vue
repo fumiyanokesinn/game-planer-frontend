@@ -1,3 +1,20 @@
+<template>
+  <div class="items-center">
+    <div class="text-white">ColorMode：</div>
+    <USelect
+      v-model="$colorMode.preference"
+      :options="modes"
+      option-attribute="name"
+    />
+    <img
+      v-if="$colorMode.preference === 'dark'"
+      src="/Logo/moon.png"
+      alt="Moon"
+    />
+    <img v-else src="/Logo/sun.png" alt="Sun" />
+  </div>
+</template>
+
 <script setup>
   const modes = [
     {
@@ -14,28 +31,3 @@
     }
   ];
 </script>
-
-<template>
-  <div>
-    <USelect
-      v-model="$colorMode.preference"
-      :options="modes"
-      option-attribute="name"
-    />
-  </div>
-</template>
-
-<style>
-  body {
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.8);
-  }
-  .dark-mode body {
-    background-color: #091a28;
-    color: #ebf4f1;
-  }
-  .sepia-mode body {
-    background-color: #f1e7d0;
-    color: #433422;
-  }
-</style>
