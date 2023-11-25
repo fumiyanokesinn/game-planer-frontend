@@ -11,6 +11,11 @@
       src="/Logo/moon.png"
       alt="Moon"
     />
+    <img
+      v-else-if="$colorMode.preference === 'sepia'"
+      src="/Logo/cafe.png"
+      alt="Cafe"
+    />
     <img v-else src="/Logo/sun.png" alt="Sun" />
   </div>
 </template>
