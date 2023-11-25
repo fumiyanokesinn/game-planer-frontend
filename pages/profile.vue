@@ -4,7 +4,7 @@
       <p class="text-7xl">Profile</p>
     </div>
 
-    <div class="flex justify-evenly h-80 mb-20">
+    <div class="flex flex-auto justify-evenly h-80 mb-20">
       <div class="w-1/3">
         <p class="text-4xl text-center mb-4">WHO AM I</p>
         <UCard class="h-full">
@@ -19,7 +19,7 @@
           </UDivider>
           <div>
             <ui>
-              <li class="flex items-center space-x-4 mb-2">
+              <li class="flex flex-auto items-center space-x-4 mb-2">
                 <UBadge size="lg" class="w-20">Job</UBadge>
                 <p class="text-xl">Web Programmer</p>
               </li>
