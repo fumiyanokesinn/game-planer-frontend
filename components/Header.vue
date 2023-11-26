@@ -29,7 +29,7 @@
     <div
       class="flex justify-between lg:flex flex-nowrap lg:justify-around items-center mx-auto max-w-screen-xl"
     >
-      <img src="/Logo/Logo.png" alt="Game Planer" />
+      <img class="min-w-min" src="/Logo/Logo.png" alt="Game Planer" />
       <ul
         class="hidden lg:flex flex-nowrap flex-col lg:flex-row lg:space-x-8 text-white"
       >
