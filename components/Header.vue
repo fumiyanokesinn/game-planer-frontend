@@ -25,7 +25,7 @@
 </script>
 
 <template>
-  <header class="bg-gray-800 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+  <header class="sticky top-0 bg-gray-800 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <div
       class="flex justify-between lg:flex flex-nowrap lg:justify-around items-center mx-auto max-w-screen-xl"
     >
