@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto min-w-[28rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
+  <div class="m-auto min-w-[32rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
     <div class="text-center">
       <p class="text-7xl">Profile</p>
     </div>
@@ -66,7 +66,7 @@
       </div>
       <div>
         <p class="text-4xl text-center mb-4">My Skill</p>
-        <UCard class="md:min-h-[22em]">
+        <UCard class="md:min-h-[22rem]">
           <p class="mb-4">
             <ULink to="https://skillicons.dev" target="_blank">
               <img

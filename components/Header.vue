@@ -26,9 +26,7 @@
 
 <template>
   <header class="sticky top-0 bg-gray-800 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-    <div
-      class="flex justify-between lg:flex flex-nowrap lg:justify-around items-center mx-auto max-w-screen-xl"
-    >
+    <div class="flex justify-between items-center lg:mx-14">
       <img class="min-w-min" src="/Logo/Logo.png" alt="Game Planer" />
       <ul
         class="hidden lg:flex flex-nowrap flex-col lg:flex-row lg:space-x-8 text-white"
@@ -41,7 +39,7 @@
         </li>
       </ul>
       <ColorMode class="invisible lg:visible" />
-      <div class="flex items-center lg:invisible">
+      <div class="flex items-center lg:hidden">
         <ColorMode />
         <UDropdown :items="items" :popper="{ placement: 'bottom-start' }">
           <Icon name="prime:align-justify" size="2em" />
