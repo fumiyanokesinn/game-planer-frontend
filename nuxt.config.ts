@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       title: 'Game Planer'
     }
   },
-  modules: ['@nuxt/ui', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/ui', '@nuxtjs/color-mode', 'nuxt-icon'],
   typescript: {
     typeCheck: true,
     strict: true
