@@ -1,13 +1,15 @@
 <template>
-  <div class="mx-20">
-    <div class="flex justify-center mb-8">
+  <div class="m-auto min-w-[28rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
+    <div class="text-center">
       <p class="text-7xl">Profile</p>
     </div>
 
-    <div class="flex flex-auto justify-evenly h-80 mb-20">
-      <div class="w-1/3">
-        <p class="text-4xl text-center mb-4">WHO AM I</p>
-        <UCard class="h-full">
+    <div
+      class="grid gap-y-4 grid-flow-row grid-cols-1 md:grid-cols-2 space-x-4"
+    >
+      <div>
+        <p class="text-center text-4xl mb-4">WHO AM I</p>
+        <UCard class="md:min-h-[22em]">
           <UDivider class="mb-4">
             <ULink to="https://github.com/fumiyanokesinn" target="_blank">
               <img
@@ -19,7 +21,7 @@
           </UDivider>
           <div>
             <ul>
-              <li class="flex flex-auto items-center space-x-4 mb-2">
+              <li class="flex items-center space-x-4 mb-2">
                 <UBadge size="lg" class="w-20">Job</UBadge>
                 <p class="text-xl">Web Programmer</p>
               </li>
@@ -33,36 +35,38 @@
               </li>
             </ul>
             <p class="text-xl">Favorite Rock Bands</p>
-            <div class="flex space-x-4">
+            <div class="grid grid-flow-row grid-cols-4 place-items-center">
               <ULink
                 to="https://open.spotify.com/intl-ja/artist/6olE6TJLqED3rqDCT0FyPh"
                 target="_blank"
-                ><p>Nirvana</p></ULink
+                ><p>・Nirvana</p></ULink
               >
               <ULink
+                class="col-span-3"
                 to="https://open.spotify.com/intl-ja/artist/40Yq4vzPs9VNUrIBG5Jr2i"
                 target="_blank"
-                ><p>Smash Pumpkins</p></ULink
+                ><p>・Smash Pumpkins</p></ULink
               >
               <ULink
                 to="https://open.spotify.com/intl-ja/artist/3RNrq3jvMZxD9ZyoOZbQOD"
                 target="_blank"
               >
-                <p>Korn</p>
+                <p>・Korn</p>
               </ULink>
               <ULink
+                class="col-span-3"
                 to="https://open.spotify.com/intl-ja/artist/2d0hyoQ5ynDBnkvAbJKORj"
                 target="_blank"
               >
-                <p>Rage Against The Machine</p>
+                <p>・Rage Against The Machine</p>
               </ULink>
             </div>
           </div>
         </UCard>
       </div>
-      <div class="w-1/3">
+      <div>
         <p class="text-4xl text-center mb-4">My Skill</p>
-        <UCard class="h-full">
+        <UCard class="md:min-h-[22em]">
           <p class="mb-4">
             <ULink to="https://skillicons.dev" target="_blank">
               <img
@@ -78,37 +82,42 @@
           </ULink>
         </UCard>
       </div>
-    </div>
-    <div class="flex justify-center mb-8">
-      <p class="text-7xl">OutPut Game</p>
-    </div>
-    <div class="flex justify-center">
-      <UCard class="w-2/3">
-        <div class="grid grid-flow-row grid-cols-3 place-items-center">
-          <ULink
-            to="https://fumiyanokesinn.itch.io/flappy-godot"
-            target="_blank"
-          >
-            <img
-              class="rounded-lg"
-              src="https://img.itch.zone/aW1nLzEyOTIyMTYyLnBuZw==/315x250%23c/pdQmQq.png"
-            />
-          </ULink>
-          <ULink
-            to="https://fumiyanokesinn.itch.io/block-breaker-demo"
-            target="_blank"
-          >
-            <img
-              class="rounded-lg"
-              src="https://img.itch.zone/aW1nLzEyMjA3NjYyLmpwZw==/315x250%23c/egb13T.jpg"
-            />
-          </ULink>
-          <img src="/Logo/question.png" />
-          <p>Flappy Bird</p>
-          <p>Block Breaker Demo</p>
-          <!-- <p>Coming Soon(in two years)</p> -->
+      <div class="md:col-span-2">
+        <p class="text-center mb-4 text-4xl">OutPut Game</p>
+        <div>
+          <UCard>
+            <div class="grid grid-cols-3 space-x-2 place-items-center">
+              <ULink
+                to="https://fumiyanokesinn.itch.io/flappy-godot"
+                target="_blank"
+              >
+                <img
+                  class="rounded-lg w-64 h-24 md:h-44"
+                  src="https://img.itch.zone/aW1nLzEyOTIyMTYyLnBuZw==/315x250%23c/pdQmQq.png"
+                />
+                <p class="text-xs">Flappy Bird</p>
+              </ULink>
+              <ULink
+                to="https://fumiyanokesinn.itch.io/block-breaker-demo"
+                target="_blank"
+              >
+                <img
+                  class="rounded-lg w-64 h-24 md:h-44"
+                  src="https://img.itch.zone/aW1nLzEyMjA3NjYyLmpwZw==/315x250%23c/egb13T.jpg"
+                />
+                <p class="text-xs">Block Breaker</p>
+              </ULink>
+              <div>
+                <img
+                  class="rounded-lg w-64 h-24 md:h-44"
+                  src="https://p.e-words.jp/img/Question-Mark.png"
+                />
+                <p class="text-xs">Coming Soon</p>
+              </div>
+            </div>
+          </UCard>
         </div>
-      </UCard>
+      </div>
     </div>
   </div>
 </template>
