@@ -18,7 +18,7 @@
             </ULink>
           </UDivider>
           <div>
-            <ui>
+            <ul>
               <li class="flex flex-auto items-center space-x-4 mb-2">
                 <UBadge size="lg" class="w-20">Job</UBadge>
                 <p class="text-xl">Web Programmer</p>
@@ -31,7 +31,7 @@
                 <UBadge size="lg" class="w-20">Hobby</UBadge>
                 <p class="text-xl">Game Create</p>
               </li>
-            </ui>
+            </ul>
             <p class="text-xl">Favorite Rock Bands</p>
             <div class="flex space-x-4">
               <ULink
@@ -106,7 +106,7 @@
           <img src="/Logo/question.png" />
           <p>Flappy Bird</p>
           <p>Block Breaker Demo</p>
-          <p>Coming Soon(in two years)</p>
+          <!-- <p>Coming Soon(in two years)</p> -->
         </div>
       </UCard>
     </div>

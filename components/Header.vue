@@ -1,6 +1,23 @@
 <script setup lang="ts">
   var isOpen: boolean = false;
-
+  const items = [
+    [
+      {
+        label: 'Home',
+        icon: 'i-heroicons-arrow-right-circle-20-solid',
+        click: () => {
+          navigateTo('/');
+        }
+      },
+      {
+        label: 'Profile',
+        icon: 'i-heroicons-arrow-right-circle-20-solid',
+        click: () => {
+          navigateTo('/profile');
+        }
+      }
+    ]
+  ];
   function onclick() {
     isOpen = !isOpen;
     console.log(isOpen);
@@ -26,11 +43,9 @@
       <ColorMode class="invisible lg:visible" />
       <div class="flex items-center lg:invisible">
         <ColorMode />
-        <IconButton
-          icon-name="prime:align-justify"
-          size="2em"
-          :on-click="onclick"
-        />
+        <UDropdown :items="items" :popper="{ placement: 'bottom-start' }">
+          <Icon name="prime:align-justify" size="2em" />
+        </UDropdown>
       </div>
     </div>
   </header>
