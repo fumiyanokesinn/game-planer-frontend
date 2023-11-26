@@ -1,6 +1,5 @@
 <template>
-  <div class="items-center">
-    <div class="text-white"><p>ColorMode：</p></div>
+  <div class="flex !justify-end items-center">
     <USelect
       v-model="$colorMode.preference"
       :options="modes"

@@ -1,12 +1,10 @@
-<script lang="ts">
-  import { defineComponent } from 'vue';
+<script setup lang="ts">
+  var isOpen: boolean = false;
 
-  export default defineComponent({
-    name: 'Nav',
-    setup() {
-      return {};
-    }
-  });
+  function onclick() {
+    isOpen = !isOpen;
+    console.log(isOpen);
+  }
 </script>
 
 <template>
@@ -25,16 +23,14 @@
           <ULink to="/profile">Profile</ULink>
         </li>
       </ul>
-      <ColorMode class="hidden lg:flex !justify-end" />
-      <div class="lg:hidden">
-        <!-- <nav> -->
-        <Button />
-        <!-- <div class="nav-items" v-bind:class="{ 'is-active': open }">
-            <div class="nav-item">Home</div>
-            <div class="nav-item">About</div>
-            <div class="nav-item">Topic</div>
-          </div>
-        </nav> -->
+      <ColorMode class="invisible lg:visible" />
+      <div class="flex items-center lg:invisible">
+        <ColorMode />
+        <IconButton
+          icon-name="prime:align-justify"
+          size="2em"
+          :on-click="onclick"
+        />
       </div>
     </div>
   </header>
