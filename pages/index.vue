@@ -1,1 +1,1 @@
-<template>作成中</template>
+<template>作成中です。頑張ってます。</template>
