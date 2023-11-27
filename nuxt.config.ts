@@ -1,7 +1,7 @@
-const isProduction = process.env.NODE_ENV == 'production'; //環境判定
+const isProduction = process.env.NODE_ENV == 'production';
 const href = isProduction
-  ? '/game-planer-frontend/favicon.ico'
-  : '/favicon.ico';
+  ? '/game-planer-frontend/favicon.ico' // 本番用
+  : '/favicon.ico'; // 開発用
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
