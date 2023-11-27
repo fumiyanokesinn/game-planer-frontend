@@ -7,15 +7,15 @@
     />
     <img
       v-if="$colorMode.preference === 'dark'"
-      src="/Logo/moon.png"
+      src="/images/Icon/Moon.png"
       alt="Moon"
     />
     <img
       v-else-if="$colorMode.preference === 'sepia'"
-      src="/Logo/cafe.png"
+      src="/images/Icon/Cafe.png"
       alt="Cafe"
     />
-    <img v-else src="/Logo/sun.png" alt="Sun" />
+    <img v-else src="/images/Icon/Sun.png" alt="Sun" />
   </div>
 </template>
 
