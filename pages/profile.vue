@@ -1,11 +1,11 @@
 <template>
-  <div class="m-auto min-w-[32rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
+  <div class="m-auto min-w-[20rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
     <div class="text-center">
       <p class="text-7xl">Profile</p>
     </div>
 
     <div
-      class="grid gap-y-4 grid-flow-row grid-cols-1 md:grid-cols-2 space-x-4"
+      class="grid gap-y-4 grid-flow-row grid-cols-1 md:grid-cols-2 md:space-x-4"
     >
       <div>
         <p class="text-center text-4xl mb-4">WHO AM I</p>
@@ -21,17 +21,14 @@
           </UDivider>
           <div>
             <ul>
-              <li class="flex items-center space-x-4 mb-2">
-                <UBadge size="lg" class="w-20">Job</UBadge>
-                <p class="text-xl">Web Programmer</p>
+              <li class="mb-2">
+                <Badge badge-name="Job" item-name="Web Programmer" />
               </li>
-              <li class="flex items-center space-x-4 mb-2">
-                <UBadge size="lg" class="w-20">Name</UBadge>
-                <p class="text-xl">Shindori Fumiya</p>
+              <li class="mb-2">
+                <Badge badge-name="Name" item-name="Shindori Fumiya" />
               </li>
-              <li class="flex items-center space-x-4 mb-2">
-                <UBadge size="lg" class="w-20">Hobby</UBadge>
-                <p class="text-xl">Game Create</p>
+              <li class="mb-2">
+                <Badge badge-name="Hobby" item-name="Game Create" />
               </li>
             </ul>
             <p class="text-xl">Favorite Rock Bands</p>
