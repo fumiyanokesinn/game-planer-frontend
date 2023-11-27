@@ -1,3 +1,7 @@
+const isProduction = process.env.NODE_ENV == 'production'; //環境判定
+const href = isProduction
+  ? '/game-planer-frontend/favicon.ico'
+  : '/favicon.ico';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -5,7 +9,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Game Planer',
       link: [
-        { rel: 'icon', type: 'image/png', href: '/Cafe.png' } // これを追記する
+        { rel: 'icon', type: 'image/x-icon', href } // これを追記する
       ]
     }
   },
