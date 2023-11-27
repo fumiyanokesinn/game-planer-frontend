@@ -1,3 +1,20 @@
+<script setup lang="ts">
+  const modes = [
+    {
+      name: 'Light',
+      value: 'light'
+    },
+    {
+      name: 'Dark',
+      value: 'dark'
+    },
+    {
+      name: 'Sepia',
+      value: 'sepia'
+    }
+  ];
+</script>
+
 <template>
   <div class="flex !justify-end items-center">
     <USelect
@@ -18,20 +35,3 @@
     <img v-else src="/images/Icon/Sun.png" alt="Sun" />
   </div>
 </template>
-
-<script setup>
-  const modes = [
-    {
-      name: 'Light',
-      value: 'light'
-    },
-    {
-      name: 'Dark',
-      value: 'dark'
-    },
-    {
-      name: 'Sepia',
-      value: 'sepia'
-    }
-  ];
-</script>
