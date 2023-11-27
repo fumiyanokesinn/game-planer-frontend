@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto min-w-[20rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
+  <div class="m-auto min-w-[18rem] max-w-md md:max-w-5xl md:min-w-[64rem]">
     <div class="text-center">
       <p class="text-7xl">Profile</p>
     </div>
@@ -31,31 +31,31 @@
                 <Badge badge-name="Hobby" item-name="Game Create" />
               </li>
             </ul>
-            <p class="text-xl">Favorite Rock Bands</p>
+            <p class="text-base md:text-xl">Favorite Rock Bands</p>
             <div class="grid grid-flow-row grid-cols-4 place-items-center">
               <ULink
                 to="https://open.spotify.com/intl-ja/artist/6olE6TJLqED3rqDCT0FyPh"
                 target="_blank"
-                ><p>・Nirvana</p></ULink
+                ><p class="text-sm md:text-base">・Nirvana</p></ULink
               >
               <ULink
                 class="col-span-3"
                 to="https://open.spotify.com/intl-ja/artist/40Yq4vzPs9VNUrIBG5Jr2i"
                 target="_blank"
-                ><p>・Smash Pumpkins</p></ULink
+                ><p class="text-sm md:text-base">・Smash Pumpkins</p></ULink
               >
               <ULink
                 to="https://open.spotify.com/intl-ja/artist/3RNrq3jvMZxD9ZyoOZbQOD"
                 target="_blank"
               >
-                <p>・Korn</p>
+                <p class="text-sm md:text-base">・Korn</p>
               </ULink>
               <ULink
                 class="col-span-3"
                 to="https://open.spotify.com/intl-ja/artist/2d0hyoQ5ynDBnkvAbJKORj"
                 target="_blank"
               >
-                <p>・Rage Against The Machine</p>
+                <p class="text-sm md:text-base">・Rage Against The Machine</p>
               </ULink>
             </div>
           </div>
