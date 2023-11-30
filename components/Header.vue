@@ -1,27 +1,18 @@
 <script setup lang="ts">
-  var isOpen: boolean = false;
   const items = [
     [
       {
         label: 'Home',
         icon: 'i-heroicons-arrow-right-circle-20-solid',
-        click: () => {
-          navigateTo('/');
-        }
+        click: () => navigateTo('/')
       },
       {
         label: 'Profile',
         icon: 'i-heroicons-arrow-right-circle-20-solid',
-        click: () => {
-          navigateTo('/profile');
-        }
+        click: () => navigateTo('/profile')
       }
     ]
   ];
-  function onclick() {
-    isOpen = !isOpen;
-    console.log(isOpen);
-  }
 </script>
 
 <template>
