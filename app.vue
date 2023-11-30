@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="min-w-[22rem]">
     <NuxtLayout>
-      <div class="my-4 mx-8">
+      <div class="p-8 overflow-scroll">
         <NuxtPage />
       </div>
     </NuxtLayout>
