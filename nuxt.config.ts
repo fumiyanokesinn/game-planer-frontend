@@ -1,6 +1,6 @@
 const isProduction = process.env.NODE_ENV == 'production';
 const href = isProduction
-  ? '/game-planer-frontend/favicon.ico' // 本番用
+  ? '/lol-loser/favicon.ico' // 本番用
   : '/favicon.ico'; // 開発用
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
