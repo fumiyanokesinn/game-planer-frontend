@@ -80,7 +80,7 @@
         </UCard>
       </div>
       <div class="lg:col-span-2">
-        <p class="text-center mb-4 text-4xl">Output Game</p>
+        <p class="text-center mb-4 text-4xl">Output Games</p>
         <div>
           <UCard>
             <div class="grid grid-cols-3 space-x-2 place-items-center">
