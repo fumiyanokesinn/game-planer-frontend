@@ -3,5 +3,11 @@
 </script>
 
 <template>
-  <UInput v-model="value" />
+  <UInput
+    icon="i-heroicons-magnifying-glass-20-solid"
+    v-model="value"
+    placeholder="Search..."
+    color="gray"
+    size="xl"
+  />
 </template>
