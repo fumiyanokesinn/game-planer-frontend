@@ -62,7 +62,7 @@
         </UCard>
       </div>
       <div>
-        <p class="text-4xl text-center mb-4">My Skill</p>
+        <p class="text-4xl text-center mb-4">My Skills</p>
         <UCard class="md:min-h-[22rem]">
           <p class="mb-4">
             <ULink to="https://skillicons.dev" target="_blank">
@@ -80,7 +80,7 @@
         </UCard>
       </div>
       <div class="md:col-span-2">
-        <p class="text-center mb-4 text-4xl">OutPut Game</p>
+        <p class="text-center mb-4 text-4xl">Output Game</p>
         <div>
           <UCard>
             <div class="grid grid-cols-3 space-x-2 place-items-center">
