@@ -9,7 +9,7 @@
     >
       <div>
         <p class="text-center text-4xl mb-4">WHO AM I</p>
-        <UCard class="md:min-h-[22em]">
+        <UCard class="md:min-h-[22em] md:h-96">
           <UDivider class="mb-4">
             <ULink to="https://github.com/fumiyanokesinn" target="_blank">
               <img
@@ -63,7 +63,7 @@
       </div>
       <div>
         <p class="text-4xl text-center mb-4">My Skills</p>
-        <UCard class="md:min-h-[22rem]">
+        <UCard class="md:min-h-[22rem] md:h-96">
           <p class="mb-4">
             <ULink to="https://skillicons.dev" target="_blank">
               <img
