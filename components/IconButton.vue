@@ -16,9 +16,7 @@
     }
   });
 
-  function onclick(event: MouseEvent) {
-    props.onClick(event);
-  }
+  const onclick = (event: MouseEvent) => props.onClick(event);
 </script>
 
 <template>
