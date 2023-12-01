@@ -1,13 +1,17 @@
 <script setup>
   const countries = ['United States', 'Canada', 'Mexico'];
-  const value = ref('');
+  const country = ref(countries[0]);
+  const name = ref('');
+
+  const getUser = () => console.log('ユーザーを取得します');
 </script>
 
 <template>
   <UContainer class="w-1/3">
     <UInput
       icon="i-heroicons-magnifying-glass-20-solid"
-      v-model="value"
+      v-model="name"
+      v-on:keyup.enter="getUser"
       placeholder="Search... Please Input Summoner Name"
       color="gray"
       size="xl"
