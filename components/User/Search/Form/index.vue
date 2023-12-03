@@ -1,9 +1,12 @@
-<script setup>
-  const countries = ['United States', 'Canada', 'Mexico'];
-  const country = ref(countries[0]);
+<script setup lang="ts">
+  // const { $regions } = useNuxtApp();
+  const regions = ['United States', 'Canada', 'Mexico'];
+  const region = ref(regions[0]);
+
   const name = ref('');
 
-  const getUser = () => console.log('ユーザーを取得します');
+  console.log(name);
+  const getUser = () => navigateTo(`/users/${region}/${name}`);
 </script>
 
 <template>
@@ -24,8 +27,8 @@
         <USelect
           class="z-10"
           color="yellow"
-          v-model="country"
-          :options="countries"
+          v-model="region"
+          :options="regions"
         />
       </template>
     </UInput>
