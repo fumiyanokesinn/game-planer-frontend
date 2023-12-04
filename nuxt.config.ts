@@ -13,7 +13,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  // 拡張機能
   modules: ['@nuxt/ui', '@nuxtjs/color-mode', 'nuxt-icon'],
+  // typescriptの設定
   typescript: {
     typeCheck: true,
     strict: true
@@ -26,7 +28,16 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
+  // 背景色の初期値
   colorMode: {
     preference: 'light'
+  },
+
+  runtimeConfig: {
+    // サーバーサイドの環境変数
+    riotApiKey: 'RGAPI-7e48db8c-d6c2-4bf5-ae89-8835e0bba5cd',
+    public: {
+      // サーバー＋クライアントサイドの環境変数
+    }
   }
 });
