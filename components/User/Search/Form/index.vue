@@ -1,12 +1,9 @@
 <script setup lang="ts">
-  // const { $regions } = useNuxtApp();
-  const regions = ['United States', 'Canada', 'Mexico'];
-  const region = ref(regions[0]);
+  const { $regions } = useNuxtApp();
+  const region = ref($regions[0]);
 
   const name = ref('');
-
-  console.log(name);
-  const getUser = () => navigateTo(`/users/${region}/${name}`);
+  const getUser = () => navigateTo(`/users/${region.value}/${name.value}`);
 </script>
 
 <template>
@@ -28,7 +25,7 @@
           class="z-10"
           color="yellow"
           v-model="region"
-          :options="regions"
+          :options="$regions"
         />
       </template>
     </UInput>
